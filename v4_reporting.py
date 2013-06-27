@@ -33,7 +33,7 @@ for obj in objects:
     cont, yr, mo, day, hour, fname = obj.name.split('/')
     date = yr + "/" + mo + "/" + day
     sql = 'insert or ignore into ' + table +\
-          ' (date,filename) values (%s,"%s")' % (date, fname)
+          ' (date,filename) values ("%s","%s")' % (date, fname)
     c.execute(sql)
     conn.commit()
     obj_path = "logs/" + fname
