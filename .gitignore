@@ -1,0 +1,6 @@
+logs/
+*.sqlite
+.venv
+*.cfg
+*.swp
+
