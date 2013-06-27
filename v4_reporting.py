@@ -45,16 +45,3 @@ for obj in objects:
             print "Cannot write file", obj_path
         finally:
             file.close()
-
-    # Setup for decompressing gzip files
-    # uuid, ext, suffix = fname.split('.')
-    # outfile = "logs/" + uuid + "." + ext
-
-    # Decompress log file
-    # infile = gzip.GzipFile(obj_path, "rb")
-    # s = infile.read()
-    # infile.close
-    # out = open(outfile, "wb")
-    # out.write(s)
-    # out.close()
-    # os.remove(obj_path)
