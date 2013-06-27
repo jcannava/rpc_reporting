@@ -23,7 +23,6 @@ cf = pyrax.cloudfiles
 
 # Get Access Log Container for V4 (change later if this changes)
 cont = cf.get_container(".CDN_ACCESS_LOGS")
-print cont
 
 # Get list of logs in container
 objects = cont.get_objects()
